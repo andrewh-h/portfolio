@@ -1,0 +1,204 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Factory Fight Club – Andrew S. Hernandez</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<style>
+		#lightbox {
+			display: none;
+			position: fixed;
+			inset: 0;
+			background: rgba(0,0,0,0.75);
+			z-index: 9999;
+			justify-content: center;
+			align-items: center;
+		}
+		#lightbox.active {
+			display: flex;
+		}
+		#lightbox img {
+			max-width: 80vw;
+			max-height: 80vh;
+			border-radius: 6px;
+			box-shadow: 0 0 40px rgba(0,0,0,0.8);
+			pointer-events: none;
+		}
+	</style>
+</head>
+<body class="is-preload">
+<div id="page-wrapper">
+
+	<div id="header-wrapper">
+		<header id="header" class="container">
+			<div id="logo">
+				<h1><a href="index.html">Andrew Hernandez</a></h1><br>
+				<span>Game Designer & Developer</span>
+			</div>
+			<nav id="nav">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="#">My Games</a>
+						<ul>
+							<li><a href="ffc.html">Factory Fight Club</a></li>
+							<li><a href="ll.html">Little Legends</a></li>
+							<li><a href="waf.html">Whack-a-frenzy</a></li>
+						</ul>
+					</li>
+					<li class="current">
+						<a href="#">Art</a>
+						<ul>
+							<li><a href="treedee.html">3D Modeling</a></li>
+							<li><a href="animation.html">3D Animations</a></li>
+							<li><a href="uiwork.html">UI Work</a></li>
+						</ul>
+					</li>
+					<li><a href="abme.html">About Me</a></li>
+				</ul>
+			</nav>
+		</header>
+	</div>
+
+	<!-- LIGHTBOX OVERLAY — lives outside .proj-white, at the page root -->
+	<div id="lightbox">
+		<div id="lightbox-inner">
+			<img id="lightbox-img" src="" alt="" style="display:none;" />
+			<video id="lightbox-video" controls style="display:none; max-width:80vw; max-height:80vh;">
+				<source id="lightbox-video-src" src="" type="video/mp4" />
+			</video>
+			<iframe id="lightbox-yt" src="" frameborder="0" allowfullscreen
+				style="display:none; width:80vw; height:45vw; max-height:80vh;">
+			</iframe>
+		</div>
+	</div>
+
+	<div class="proj-white">
+		<div class="container">
+			<h2>Animations</h2>
+			<hr class="proj-rule" />
+
+			<div class="art-mosaic">
+				<div class="art-tile" data-src="videos/mine.mp4" data-type="video">
+					<video muted preload="metadata" style="width:100%; height:100%; object-fit:cover; pointer-events:none;">
+						<source src="videos/mine.mp4" type="video/mp4" />
+					</video>
+					<div class="art-overlay"><span>Animation Final!</span></div>
+				</div>
+				<div class="art-tile" data-src="videos/bounce.mp4" data-type="video">
+					<video muted preload="metadata" style="width:100%; height:100%; object-fit:cover; pointer-events:none;">
+						<source src="videos/bounce.mp4" type="video/mp4" />
+					</video>
+					<div class="art-overlay"><span>Ball Bounce</span></div>
+				</div>
+				<div class="art-tile" data-src="videos/hapwalk.mp4" data-type="video">
+					<video muted preload="metadata" style="width:100%; height:100%; object-fit:cover; pointer-events:none;">
+						<source src="videos/hapwalk.mp4" type="video/mp4" />
+					</video>
+					<div class="art-overlay"><span>Happy Walk</span></div>
+				</div>
+				<div class="art-tile" data-src="videos/stomp.mp4" data-type="video">
+					<video muted preload="metadata" style="width:100%; height:100%; object-fit:cover; pointer-events:none;">
+						<source src="videos/stomp.mp4" type="video/mp4" />
+					</video>
+					<div class="art-overlay"><span>Chameleon Stomp</span></div>
+				</div>
+				<div class="art-tile" data-src="videos/swim.mp4" data-type="video">
+					<video muted preload="metadata" style="width:100%; height:100%; object-fit:cover; pointer-events:none;">
+						<source src="videos/swim.mp4" type="video/mp4" />
+					</video>
+					<div class="art-overlay"><span>Tadpole Swim</span></div>
+				</div>
+				<div class="art-tile" data-src="videos/throw.mp4" data-type="video">
+					<video muted preload="metadata" style="width:100%; height:100%; object-fit:cover; pointer-events:none;">
+						<source src="videos/throw.mp4" type="video/mp4" />
+					</video>
+					<div class="art-overlay"><span>Throw ball</span></div>
+				</div>
+				<div class="art-tile" data-src="videos/tongue.mp4" data-type="video">
+					<video muted preload="metadata" style="width:100%; height:100%; object-fit:cover; pointer-events:none;">
+						<source src="videos/tongue.mp4" type="video/mp4" />
+					</video>
+					<div class="art-overlay"><span>Tongue Attack</span></div>
+				</div>
+				
+
+			</div>
+
+			<p class="art-note">
+				Animated using Maya & Blender. Videos made with Adobe Premier Pro.
+			</p>
+		</div>
+	</div>
+
+	<div id="footer-wrapper">
+		<footer id="footer" class="container">
+			<div class="row">
+				<div class="col-12">
+					<div id="copyright">
+						<ul class="menu">
+							<li>&copy; Andrew S. Hernandez. All rights reserved.</li>
+							<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+</div><!-- end #page-wrapper -->
+
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.dropotron.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+<script>
+	const lightbox = document.getElementById('lightbox');
+	const lightboxImg = document.getElementById('lightbox-img');
+	const lightboxVideo = document.getElementById('lightbox-video');
+	const lightboxVideoSrc = document.getElementById('lightbox-video-src');
+	const lightboxYT = document.getElementById('lightbox-yt');
+
+	function resetLightbox() {
+		lightboxImg.style.display = 'none';
+		lightboxVideo.style.display = 'none';
+		lightboxVideo.pause();
+		lightboxVideoSrc.src = '';
+		lightboxYT.style.display = 'none';
+		lightboxYT.src = '';
+	}
+
+	document.querySelectorAll('.art-tile[data-src]').forEach(tile => {
+		tile.addEventListener('click', () => {
+			resetLightbox();
+			const type = tile.dataset.type || 'image';
+
+			if (type === 'youtube') {
+				lightboxYT.src = tile.dataset.src;
+				lightboxYT.style.display = 'block';
+			} else if (type === 'video') {
+				lightboxVideoSrc.src = tile.dataset.src;
+				lightboxVideo.load();
+				lightboxVideo.style.display = 'block';
+			} else {
+				lightboxImg.src = tile.dataset.src;
+				lightboxImg.alt = tile.dataset.alt || '';
+				lightboxImg.style.display = 'block';
+			}
+
+			lightbox.classList.add('active');
+		});
+	});
+
+	// Click the dark backdrop to close
+	lightbox.addEventListener('click', (e) => {
+		if (e.target === lightbox) {
+			resetLightbox();
+			lightbox.classList.remove('active');
+		}
+	});
+</script>
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE HTML>
+<!--
+	Project Page Template – Andrew S. Hernandez
+	Built on Verti by HTML5 UP (html5up.net | @ajlkn)
+-->
+<html>
+<head>
+	<title>Factory Fight Club – Andrew S. Hernandez</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<style>
+		#lightbox {
+			display: none;
+			position: fixed;
+			inset: 0;
+			background: rgba(0,0,0,0.75);
+			z-index: 9999;
+			justify-content: center;
+			align-items: center;
+		}
+  		#lightbox.active {
+    		display: flex;
+  		}
+  		#lightbox img {
+			max-width: 80vw;
+			max-height: 80vh;
+			border-radius: 6px;
+			box-shadow: 0 0 40px rgba(0,0,0,0.8);
+			pointer-events: none;
+  		}		
+	</style>
+</head>
+<body class="is-preload">
+<div id="page-wrapper">
+
+	<div id="header-wrapper">
+		<header id="header" class="container">
+			<div id="logo">
+				<h1><a href="index.html">Andrew Hernandez</a></h1><br>
+				<span>Game Designer & Developer</span>
+			</div>
+			<nav id="nav">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="#">My Games</a>
+						<ul>
+							<li><a href="ffc.html">Factory Fight Club</a></li>
+							<li><a href="ll.html">Little Legends</a></li>
+							<li><a href="waf.html">Whack-a-frenzy</a></li>
+							<!--<li><a href="nebap.html">Nebular Apsis</a></li>-->
+						</ul>
+					</li>
+					<li class="current">
+						<a href="#">Art</a>
+						<ul>
+							<li><a href="treedee.html">3D Modeling</a></li>
+							<li><a href="animation.html">3D Animations</a></li>
+							<li><a href="uiwork.html">UI Work</a></li>
+						</ul>
+					</li>
+					<li><a href="abme.html">About Me</a></li>
+				</ul>
+			</nav>
+		</header>
+	</div>
+	<div class="proj-white">
+		<div class="container">
+			<h2>Art & 3D Work</h2>
+			<hr class="proj-rule" />
+
+		<div id="lightbox">
+		<img id="lightbox-img" src="" alt="" />
+		</div>
+		<div class="art-mosaic">
+		<div class="art-tile" data-src="images/2mod.jpg" data-alt="Alien">
+			<img src="images/2mod.jpg" alt="alien" />
+			<div class="art-overlay"><span>Alien</span></div>
+		</div>
+		<div class="art-tile" data-src="images/cham.jpg" data-alt="Chameleon">
+			<img src="images/cham.jpg" alt="chameleon" />
+			<div class="art-overlay"><span>Chameleon</span></div>
+		</div>
+		<div class="art-tile" data-src="images/owl.jpg" data-alt="Owl">
+			<img src="images/owl.jpg" alt="owl" />
+			<div class="art-overlay"><span>Owl</span></div>
+		</div>
+		<div class="art-tile" data-src="images/spider.jpg" data-alt="Spider">
+			<img src="images/spider.jpg" alt="spider" />
+			<div class="art-overlay"><span>Spider</span></div>
+		</div>
+		<div class="art-tile" data-src="images/tp.jpg" data-alt="Tadpole">
+			<img src="images/tp.jpg" alt="Tadpole" />
+			<div class="art-overlay"><span>Tadpole</span></div>
+		</div>
+		</div>
+
+			<p class="art-note">
+				Modeling done in Blender.
+			</p>
+
+		</div>
+	</div>
+
+	<div id="footer-wrapper">
+		<footer id="footer" class="container">
+			<div class="row">
+				<div class="col-12">
+					<div id="copyright">
+						<ul class="menu">
+							<li>&copy; Andrew S. Hernandez. All rights reserved.</li>
+							<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+</div><!-- end #page-wrapper -->
+
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.dropotron.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+<script>
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.getElementById('lightbox-img');
+
+  document.querySelectorAll('.art-tile[data-src]').forEach(tile => {
+    tile.addEventListener('click', () => {
+      lightboxImg.src = tile.dataset.src;
+      lightboxImg.alt = tile.dataset.alt;
+      lightbox.classList.add('active');
+    });
+  });
+
+ 
+  lightbox.addEventListener('click', () => {
+    lightbox.classList.remove('active');
+  });
+</script>
+</body>
+</html>

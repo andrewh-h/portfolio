@@ -1,0 +1,200 @@
+<!DOCTYPE HTML>
+<!--
+	Project Page Template – Andrew S. Hernandez
+	Built on Verti by HTML5 UP (html5up.net | @ajlkn)
+-->
+<html>
+<head>
+	<title>Factory Fight Club – Andrew S. Hernandez</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<style>
+		:root {
+        --proj-accent:  #1D1160;
+        --proj-accent2: #E56020;
+    }
+
+    #proj-hero-wrapper {
+        background-color: #0D0A38;
+    }
+
+    .sys-card {
+        background: #1a1040;
+    }
+	.proj-dark-wrapper {
+			background-color: #261e52;
+			background-image: url("assets/css/images/bg01.png");
+			background-repeat: repeat;
+			padding: 5em 0;
+		}
+	</style>
+</head>
+<body class="is-preload">
+<div id="page-wrapper">
+
+	<div id="header-wrapper">
+		<header id="header" class="container">
+			<div id="logo">
+				<h1><a href="index.html">Andrew Hernandez</a></h1><br>
+				<span>Game Designer & Developer</span>
+			</div>
+			<nav id="nav">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li class="current"><a href="#">My Games</a>
+						<ul>
+							<li><a href="ffc.html">Factory Fight Club</a></li>
+							<li><a href="ll.html">Little Legends</a></li>
+							<li><a href="waf.html">Whack-a-frenzy</a></li>
+							<!--<li><a href="nebap.html">Nebular Apsis</a></li>-->
+						</ul>
+					</li>
+					<li>
+						<a href="#">Art</a>
+						<ul>
+							<li><a href="treedee.html">3D Modeling</a></li>
+							<li><a href="animation.html">3D Animations</a></li>
+							<li><a href="uiwork.html">UI Work</a></li>
+						</ul>
+					</li>
+					<li><a href="abme.html">About Me</a></li>
+				</ul>
+			</nav>
+		</header>
+	</div>
+	<div id="proj-hero-wrapper">
+		<div id="proj-herof" class="container">
+			<span class="proj-genre-tag">Action</span> <span class="proj-genre-tag">Brawler</span> 
+			<h1>Factory<br><span>Fight Club</span></h1>           
+			<div class="proj-meta-row">
+				<div class="proj-meta-item"><strong>My Role</strong>Game Designer & Programmer</div>
+				<div class="proj-meta-item"><strong>Engine</strong>Unity</div>
+				<div class="proj-meta-item"><strong>Timeline</strong>Aug – Dec 2023</div>
+				<div class="proj-meta-item"><strong>Team Size</strong>4 People</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Colored blurb strip -->
+	<div id="proj-overview-wrapper">
+		<div id="proj-overview" class="container">
+			<p>
+				FFC is a 3D Action Roguelike Game similar to Tekken with elements of Risk of Rain 2 and Enter the Gungeon, where players fight robots and equip themselves with unique upgrades.
+			</p>
+			<div class="proj-cta-links">
+				<a href="https://andrewher.itch.io/factor-fight-club" target="_blank" class="button proj-btn-outline">↗ Itch.io</a>
+			</div>
+		</div>
+	</div>
+	<div class="proj-white">
+		<div class="container">
+
+			
+			<h2>Gameplay Overview</h2>
+			<hr class="proj-rule" />
+
+			<div class="gameplay-screenshot" style="height: auto; background: none; justify-content: center;">
+    			<img src="images/ffc.jpg" alt="Gameplay" style="width: auto; max-width: 100%; height: auto; border-radius: 6px;">
+				<img src="images/punch.jpg" alt="Gameplay" style="width: auto; max-width: 100%; height: auto; border-radius: 6px;">
+				<img src="images/win.jpg" alt="Gameplay" style="width: auto; max-width: 100%; height: auto; border-radius: 6px;">
+			</div>
+
+			<div class="gameplay-cards">
+				<div class="gameplay-card">
+					<h4>Core Loop</h4>
+					<p>Player is greeted with an enemy, if the player becomes victorious they are rewarded with the option of 
+						adding a new upgrade to the robot. The player will get to test out their new upgrade against the next foe 
+						who is a tad bit stronger than the last.
+					</p>
+				</div>
+				<div class="gameplay-card">
+					<h4>Win Condition</h4>
+					<p>Take on every competitor Factor Fight Club has to offer and win the tournament!</p>
+				</div>
+				<div class="gameplay-card">
+					<h4>The Why</h4>
+					<p>Most fighting games stick to the traditional separate characters, our twist to the genre was to introduce a new one, 
+						Roguelike. Adding a Roguelike element to the fighting genre is something that has not been thorughly explored and is 
+						something my group and I wanted to experience.
+					</p>
+				</div>
+				<div class="gameplay-card">
+					<h4>Inspiration</h4>
+					<p> Having recently played Elden Ring, I love the way enemies are handled in that game and wanted to take some inspiration.
+						Each enemy has their own personality on the backend, some start off more aggressive and some start off passive depending on the round type.
+					</p> 
+				</div>
+			</div>
+
+		</div>
+	</div>
+	<div class="proj-dark-wrapper">
+		<div class="container">
+
+			<span class="proj-label light">Under the Hood</span>
+			<h2>Programming & Systems</h2>
+			<hr class="proj-rule pink" />
+
+			
+			<div class="tech-chips">
+				<span class="tech-chip pink">C#</span>
+				<span class="tech-chip pink">Unity</span>
+				<span class="tech-chip pink">Enemy State Machines</span>
+				<span class="tech-chip pink">Blender</span>
+				<span class="tech-chip pink">Modular Enemy Body</span>
+                <span class="tech-chip pink">Aseprite</span>
+				<span class="tech-chip pink">Plastic SCM</span>
+			</div>
+
+			<div class="sys-cards">
+				<div class="sys-card">
+					<h4>Combat System</h4>
+					<p>The combat system is handled by unity animation events, there is a window that opens up and checks to see if the hand box collider intersects 
+						the enemy or players hitbox. The enemy combat system is handled by the meter that is talked about in Enemy AI. Each enemy state has its own pool of animation sets to pull out of ranging from 
+						defensive animations, attack animations and basic would pull an even amount from both.
+					</p>
+				</div>
+				<div class="sys-card">
+					<h4>Enemy AI</h4>
+					<p> All enemies have a "meter" spanning from 1 - 10, 1 - 4 is defensive, 5 - 7 is basic and 8 - 10 is aggressive. That meter is dictated by the actions of the player, 
+						if the player hits the enemy the meter will go down one value and if the enemy lands a hit the enemy meter will increase by one value. 
+					</p>
+				</div>
+
+				<div class="sys-card">
+					<h4>Project Manager</h4>
+					<p>Voted as project manager I assigned tasks, goals, deadlines, artstyle & maintained a positive team environment. Being project manager taught me so much aside from the game development portion, 
+						I learned how to conform to teammembers making sure everyones job is as easy as possible.
+					</p>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<div id="footer-wrapper">
+		<footer id="footer" class="container">
+			<div class="row">
+				<div class="col-12">
+					<div id="copyright">
+						<ul class="menu">
+							<li>&copy; Andrew S. Hernandez. All rights reserved.</li>
+							<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+</div><!-- end #page-wrapper -->
+
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.dropotron.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
