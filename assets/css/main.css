@@ -1,18 +1,6 @@
 @import url("fontawesome-all.min.css");
 @import url("https://fonts.googleapis.com/css?family=Oleo+Script:400|Open+Sans:300,300italic,600,600italic,800");
 
-@font-face {
-    font-family: 'Fat Fantasy';
-    src: url('../../fonts/Fat Fantasy.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Future Now';
-    src: url('../../fonts/Future Now.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
-}
 /*
 	Verti by HTML5 UP
 	html5up.net | @ajlkn
